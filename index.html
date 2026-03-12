@@ -35,20 +35,20 @@ img{max-width:100%;display:block}
 @keyframes pulse-btn{0%,100%{box-shadow:0 0 0 0 rgba(26,184,243,.5)}50%{box-shadow:0 0 0 12px rgba(26,184,243,0)}}
 
 /* HERO */
-.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:100px 20px 60px;position:relative;overflow:hidden}
+.hero{min-height:100vh;min-height:100dvh;display:flex;align-items:center;justify-content:center;text-align:center;padding:70px 20px 24px;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 30% 40%,rgba(26,184,243,.12) 0%,transparent 50%),radial-gradient(circle at 70% 60%,rgba(123,53,201,.12) 0%,transparent 50%);animation:hero-glow 8s ease-in-out infinite alternate}
 @keyframes hero-glow{0%{transform:translate(0,0)}100%{transform:translate(-3%,3%)}}
 .hero-content{position:relative;z-index:2}
-.hero-badge{display:inline-block;background:rgba(26,184,243,.15);border:1px solid rgba(26,184,243,.3);padding:8px 24px;border-radius:50px;font-size:.85rem;color:var(--cyan);font-weight:700;margin-bottom:20px;text-transform:uppercase;letter-spacing:2px}
-.hero h1{font-size:clamp(2.5rem,8vw,5rem);margin-bottom:10px}
+.hero-badge{display:inline-block;background:rgba(26,184,243,.15);border:1px solid rgba(26,184,243,.3);padding:6px 20px;border-radius:50px;font-size:.8rem;color:var(--cyan);font-weight:700;margin-bottom:10px;text-transform:uppercase;letter-spacing:2px}
+.hero h1{font-size:clamp(2rem,7vw,4rem);margin-bottom:4px}
 .hero h1 span{background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero-price{font-family:'Bebas Neue',sans-serif;font-size:clamp(4rem,15vw,9rem);background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin:10px 0}
-.hero-price-label{font-size:1.1rem;color:var(--gray);margin-bottom:5px}
-.hero-sub{font-size:1.15rem;color:var(--gray);max-width:500px;margin:0 auto 30px;line-height:1.7}
+.hero-price{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,10vw,5.5rem);background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin:4px 0}
+.hero-price-label{font-size:1rem;color:var(--gray);margin-bottom:2px}
+.hero-sub{font-size:1.05rem;color:var(--gray);max-width:560px;margin:0 auto 6px;line-height:1.5}
 .hero-sub strong{color:var(--white)}
 
 /* Hero Boleto Destaque */
-.hero-boleto{display:inline-block;background:rgba(26,184,243,.12);border:2px solid rgba(26,184,243,.35);padding:14px 28px;border-radius:14px;font-size:1.1rem;font-weight:800;color:var(--white);margin:16px auto 10px;max-width:540px;animation:boleto-glow 2.5s ease-in-out infinite alternate}
+.hero-boleto{display:inline-block;background:rgba(26,184,243,.12);border:2px solid rgba(26,184,243,.35);padding:10px 24px;border-radius:12px;font-size:1rem;font-weight:800;color:var(--white);margin:8px auto 10px;max-width:540px;animation:boleto-glow 2.5s ease-in-out infinite alternate}
 @keyframes boleto-glow{0%{box-shadow:0 0 10px rgba(26,184,243,.2)}100%{box-shadow:0 0 25px rgba(26,184,243,.45)}}
 
 /* Garantia Destaque 5 Anos */
@@ -62,22 +62,22 @@ img{max-width:100%;display:block}
 .pay-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:#ffd700;color:#000;font-size:.65rem;font-weight:900;padding:4px 14px;border-radius:50px;text-transform:uppercase;letter-spacing:1px;white-space:nowrap}
 
 /* Video Placeholder */
-.hero-video-placeholder{max-width:560px;margin:24px auto;border-radius:16px;border:2px solid rgba(26,184,243,.35);background:rgba(6,6,18,.85);aspect-ratio:16/9;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:relative;overflow:hidden;cursor:default}
+.hero-video-placeholder{max-width:480px;margin:10px auto;border-radius:14px;border:2px solid rgba(26,184,243,.35);background:rgba(6,6,18,.85);aspect-ratio:16/9;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;position:relative;overflow:hidden;cursor:default}
 .hero-video-placeholder::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at center,rgba(26,184,243,.08) 0%,transparent 70%)}
-.hero-video-play{width:64px;height:64px;border-radius:50%;background:rgba(26,184,243,.15);border:2px solid rgba(26,184,243,.4);display:flex;align-items:center;justify-content:center;font-size:1.6rem;color:var(--cyan);position:relative;transition:all .3s}
+.hero-video-play{width:50px;height:50px;border-radius:50%;background:rgba(26,184,243,.15);border:2px solid rgba(26,184,243,.4);display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:var(--cyan);position:relative;transition:all .3s}
 .hero-video-placeholder:hover .hero-video-play{background:rgba(26,184,243,.25);transform:scale(1.08)}
 .hero-video-text{font-size:.95rem;color:var(--gray);font-weight:600;position:relative;letter-spacing:.5px}
 
 /* Countdown */
-.countdown{display:flex;gap:12px;justify-content:center;margin-bottom:30px}
-.countdown-item{background:rgba(26,184,243,.1);border:1px solid rgba(26,184,243,.25);border-radius:12px;padding:12px 16px;min-width:70px;text-align:center}
-.countdown-num{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--cyan)}
+.countdown{display:flex;gap:10px;justify-content:center;margin-bottom:14px}
+.countdown-item{background:rgba(26,184,243,.1);border:1px solid rgba(26,184,243,.25);border-radius:10px;padding:8px 14px;min-width:60px;text-align:center}
+.countdown-num{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:var(--cyan)}
 .countdown-label{font-size:.7rem;color:var(--gray);text-transform:uppercase;letter-spacing:1px}
 
-.hero-ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-.btn-primary{background:var(--gradient);color:#fff;padding:16px 36px;border-radius:50px;font-weight:800;font-size:1.05rem;border:none;cursor:pointer;animation:pulse-btn 2s infinite;transition:transform .2s;display:inline-flex;align-items:center;gap:8px}
+.hero-ctas{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.btn-primary{background:var(--gradient);color:#fff;padding:13px 30px;border-radius:50px;font-weight:800;font-size:1rem;border:none;cursor:pointer;animation:pulse-btn 2s infinite;transition:transform .2s;display:inline-flex;align-items:center;gap:8px}
 .btn-primary:hover{transform:scale(1.05)}
-.btn-secondary{background:transparent;border:2px solid var(--cyan);color:var(--cyan);padding:14px 32px;border-radius:50px;font-weight:700;font-size:1rem;cursor:pointer;transition:all .3s}
+.btn-secondary{background:transparent;border:2px solid var(--cyan);color:var(--cyan);padding:11px 26px;border-radius:50px;font-weight:700;font-size:.9rem;cursor:pointer;transition:all .3s}
 .btn-secondary:hover{background:var(--cyan);color:var(--bg)}
 
 /* BARRA URGÊNCIA */
@@ -226,17 +226,28 @@ section{padding:80px 0}
 .obj-grid{grid-template-columns:1fr}
 }
 @media(max-width:600px){
-.hero{padding:90px 16px 50px}
-.hero-price{font-size:5rem}
+.hero{padding:65px 14px 16px}
+.hero-badge{padding:5px 16px;font-size:.7rem;margin-bottom:6px}
+.hero h1{font-size:1.8rem;margin-bottom:2px}
+.hero-price-label{font-size:.85rem;margin-bottom:1px}
+.hero-price{font-size:3.2rem;margin:2px 0}
+.hero-sub{font-size:.9rem;margin:0 auto 4px;line-height:1.4}
+.hero-boleto{font-size:.8rem;padding:8px 16px;margin:6px auto 8px;border-radius:10px}
+.hero-video-placeholder{max-width:100%;margin:8px auto;aspect-ratio:16/9}
+.hero-video-play{width:40px;height:40px;font-size:1rem}
+.hero-video-text{font-size:.8rem}
+.countdown{gap:6px;margin-bottom:10px}
+.countdown-item{padding:6px 10px;min-width:50px;border-radius:8px}
+.countdown-num{font-size:1.3rem}
+.countdown-label{font-size:.6rem}
+.hero-ctas{flex-direction:column;align-items:center;gap:8px}
+.btn-primary{padding:12px 24px;font-size:.9rem}
+.btn-secondary{padding:10px 22px;font-size:.8rem}
 .section-title{font-size:2rem}
 .guar-grid{grid-template-columns:1fr}
-.hero-ctas{flex-direction:column;align-items:center}
-.countdown{gap:8px}
-.countdown-item{padding:10px 12px;min-width:60px}
-.nav-inner{padding:10px 16px}
-.nav-logo img{height:50px}
-.hero-boleto{font-size:.95rem;padding:12px 20px}
-.nav-cta{padding:8px 16px;font-size:.8rem}
+.nav-inner{padding:8px 14px}
+.nav-logo img{height:45px}
+.nav-cta{padding:7px 14px;font-size:.75rem}
 .form-wrapper{padding:28px 20px}
 }
 </style>
@@ -267,11 +278,8 @@ section{padding:80px 0}
 <!-- 4. Preço gigante -->
 <div class="hero-price">R$150</div>
 
-<!-- 5. Frase entrada -->
-<p class="hero-sub">de entrada e parcelas que <strong>cabem no seu bolso</strong>.</p>
-
-<!-- 6. Frase aprovação -->
-<p class="hero-sub">Aprovação no <strong>mesmo dia</strong>. É sua vez de ter o celular que você merece!</p>
+<!-- 5+6. Frases -->
+<p class="hero-sub">de entrada e parcelas que <strong>cabem no seu bolso</strong>. Aprovação no <strong>mesmo dia</strong>. É sua vez de ter o celular que você merece!</p>
 
 <!-- 7. Box boleto 48x -->
 <div class="hero-boleto">📄 Parcelado em até 48x no Boleto — Sem Cartão, Sem Juros Absurdos</div>
